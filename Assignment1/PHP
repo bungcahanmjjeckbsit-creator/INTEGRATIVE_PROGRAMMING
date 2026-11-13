@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment #1 - About Me</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            width: 700px;
+            max-width: 90%;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .example {
+            margin-top: 25px;
+            padding: 15px 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Assignment #1: About Me</h1>
+
+    <?php
+
+    // 1. IF STATEMENT
+
+    $age = 22;
+
+    echo "<div class='example'>";
+
+    echo "<h2>1. If Statement</h2>";
+
+    echo "<p>My age is $age.</p>";
+
+    if ($age >= 18) {
+        echo "<p>I am already an adult.</p>";
+    }
+
+    echo "</div>";
+
+
+    // 2. IF ELSE STATEMENT
+
+    $likesMovies = true;
+
+    echo "<div class='example'>";
+
+    echo "<h2>2. If...Else Statement</h2>";
+
+    if ($likesMovies) {
+        echo "<p>I like watching movies, especially when I have free time.</p>";
+    } else {
+        echo "<p>I don't really watch movies.</p>";
+    }
+
+    echo "</div>";
+
+
+    // 3. IF ELSEIF ELSE STATEMENT
+
+    $studyHours = 4;
+
+    echo "<div class='example'>";
+
+    echo "<h2>3. If...Elseif...Else Statement</h2>";
+
+    echo "<p>Today, I studied for $studyHours hours.</p>";
+
+    if ($studyHours >= 5) {
+
+        echo "<p>I studied a lot today.</p>";
+
+    } elseif ($studyHours >= 3) {
+
+        echo "<p>I studied for a few hours today.</p>";
+
+    } elseif ($studyHours >= 1) {
+
+        echo "<p>I only studied for a little while today.</p>";
+
+    } else {
+
+        echo "<p>I didn't study today.</p>";
+
+    }
+
+    echo "</div>";
+
+
+    // 4. SWITCH STATEMENT
+
+    $favoriteActivity = "Movies";
+
+    echo "<div class='example'>";
+
+    echo "<h2>4. Switch Statement</h2>";
+
+    switch ($favoriteActivity) {
+
+        case "Movies":
+            echo "<p>When I have free time, I usually binge-watch random movies.</p>";
+            break;
+
+        case "Gaming":
+            echo "<p>I usually spend my free time playing games.</p>";
+            break;
+
+        case "Music":
+            echo "<p>I usually spend my free time listening to music.</p>";
+            break;
+
+        case "Travel":
+            echo "<p>I like spending my free time going to different places.</p>";
+            break;
+
+        default:
+            echo "<p>I have different ways of spending my free time.</p>";
+    }
+
+    echo "</div>";
+
+    ?>
+
+</div>
+
+</body>
+</html>
